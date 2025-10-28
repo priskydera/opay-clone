@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10000;
+}
+header img{
+    width: 200px;
+}
+header a{
+    text-decoration: none;
+    color: #000;
+}
+header .active{
+    color: #1FC69D;
+}
+
+/* hero section */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/home01.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    width: 95vw;
+    height: 70vh;
+}
+
+.col h1{
+    font-weight: 600;
+    font-size: 5vw;
+    color: #fff;
+}
+.col p{
+    width: 50vw;
+    font-size: 25px;
+    line-height: 2;
+    color: #360778;
+}
+.col img{
+    width: 30vw;
+}
+
+/* Feature Section */
+.feature{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    width: 95vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col1{
+    display: flex;
+    /* justify-it: flex-start; */
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+}
+.col1 img{
+    width: 200px;
+    z-index: 10;
+}
+.details{
+    width: 280px;
+    height: 280px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.details p{
+    font-size: 20px;
+    color: #1FC69D;
+}
+.details b{
+    color: #360778;
+    font-size: 15px;
+}
+.details i{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #1FC69D;         
+}
+
+.col1:hover .details{
+    background-color: #1FC69D;
+    color: #fff;
+}
+.col1:hover .details i{
+    color: #fff;
+}
+.col1:hover .details b{
+    color: #fff;
+}
+.col1:hover .details p{
+    color: #fff;
+}
+
+/* Our services section */
+#services{
+    width: 100vw;
+}
+.title h2{
+    color: #360778;
+    font-size: 40px;
+}
+.title{
+    margin-left: 20px;
+}
+.services{
+    width: inherit;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.services img{
+    width: 600px;
+}
+.col2{
+    width: 45vw;
+}
+.col2 h2{
+    font-size: 60px;
+}
+.col2 p{
+    font-size: 40px;
+}
